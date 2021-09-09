@@ -1,0 +1,76 @@
+{
+    "name": "biothal",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "webpack": "webpack",
+        "webpack:dev": "webpack --mode development"
+    },
+    "dependencies": {
+        "@gtm-support/vue2-gtm": "^1.1.0",
+        "axios": "^0.21.1",
+        "core-js": "^3.6.5",
+        "html-webpack-plugin": "^3.2.0",
+        "vue": "^2.6.11",
+        "vue-agile": "^1.1.3",
+        "vue-axios": "^3.2.4",
+        "vue-gallery-slideshow": "^1.5.2",
+        "vue-lodash": "^2.1.2",
+        "vue-meta": "^2.4.0",
+        "vue-notification": "^1.3.20",
+        "vue-router": "^3.5.1",
+        "vue-the-mask": "^0.11.1",
+        "vuejs-loading-plugin": "^1.0.51",
+        "vuetify": "^2.4.3",
+        "vuetify-loader": "^1.7.2",
+        "vuex": "^3.6.2",
+        "vuex-persistedstate": "^4.0.0-beta.3"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "babel-eslint": "^10.1.0",
+        "compression-webpack-plugin": "^6.1.1",
+        "css-loader": "^5.2.4",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "imagemin-webpack-plugin": "^2.4.2",
+        "node-sass": "^5.0.0",
+        "preload-webpack-plugin": "^3.0.0-beta.4",
+        "sass-loader": "^10.2.0",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "vue-loader": "^15.9.7",
+        "vue-style-loader": "^4.1.3",
+        "vue-template-compiler": "^2.6.12",
+        "webpack": "^4.46.0",
+        "webpack-ui": "0.0.10"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {
+            "no-debugger": "off",
+            "no-unused-vars": "warn",
+            "vue/no-unused-components": "warn",
+            "vue/no-unused-vars": "warn"
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ]
+}

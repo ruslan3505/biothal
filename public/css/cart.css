@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, serif;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+}
+
+.active {
+    display: block;
+}
+
+/*rating*/
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating-mini span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgrey;
+}
+
+.rating-mini > span:before {
+    content: '★';
+}
+
+.rating-mini > span.active {
+    color: #2f7484;
+}
+
+/*counter*/
+.amount {
+    /*width:200px;*/
+    margin-bottom: 20px;
+}
+
+.down {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ededed;
+    cursor: pointer;
+    text-align: center;
+}
+
+.down:hover {
+    background: #dfdfdf;
+}
+
+.up {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background: #2f7484;
+    cursor: pointer;
+    text-align: center;
+}
+
+.up:hover {
+    background: #59b6cb;
+}
+
+.minus {
+    background: none!important;
+}
+
+.minus:hover {
+    background: #dbdbdb!important;
+}
+
+.plus {
+    color: #000000!important;
+    background: none!important;
+}
+
+.plus:hover {
+    color: white!important;
+    background: #2f7484!important;
+}
+
+.cartName {
+    margin-bottom: 30px;
+}
+
+.amount input {
+    width: 30px;
+    text-align: center;
+}
+
+/*button*/
+.btn-myBuy {
+    margin-right: 30px;
+    border-radius: 50rem!important;
+    height: 48px;
+    width: 180px;
+    background-color: #2f7484!important;
+    color: white!important;
+    border-color: transparent;
+}
+
+.btn-myBuy:hover {
+    background: #000000!important;
+    border-color: transparent;
+    color: white;
+}
+
+.btn-myCall {
+    border-radius: 50rem;
+    height: 48px;
+    width: 246px;
+    background-color: #e2e9e9;
+    border-color: transparent;
+}
+
+.btn-myCall:hover {
+    background: #bcc1c1;
+    border-color: transparent;
+}
+
+.add_click {
+    padding-left: 25px;
+    font-size: 11px
+}
+
+div.verticalscroll {
+    height: 40em;
+    overflow: auto;
+    overflow-y: scroll;
+}
+
+.colorInput {
+    background-color: #F7F7F7 !important;
+}
+
+
+.progress-bar {
+    width: 95%;
+    height: 15px;
+    background-color: #bbbcbc;
+    border-radius: 10px;
+}
+.progress-bar > div {
+    height: 100%;
+    background-color: #2f7484;
+}
+
+.progress-bar2 {
+    width: 95%;
+    height: 15px;
+    background-color: #bbbcbc;
+    border-radius: 10px;
+}
+.progress-bar2 > div {
+    height: 100%;
+    background-color: #2f7484;
+}
+
+.progress-count {
+    width: 90%;
+    text-align: center;
+}
+.icon {
+    display: inline-block;
+    position: relative;
+}
+.icon:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    left: auto; top: auto;
+    z-index: 1;
+    background: rgba(255,255,230,0.9);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    width: 18em;
+    text-align: center;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.pulse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.3em;
+    height: 1em;
+    color:gray;
+    background: white;
+    border-radius: 50%;
+    animation: radial-pulse 3s infinite;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes radial-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+    }
+}
+
+.my_height, .my_height2 {
+    margin: 10px;
+    padding: 10px;
+    width: calc(50% - 24px);
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    line-height: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.my_height {
+    padding-top: 30px;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color: #2F7484;
+    border: 1px solid #2F7484;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    color: #fff;
+    background-color: #2F7484;
+    border-color:#2F7484
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #2F7484;
+    border-color: #2F7484
+}
+
+.pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+    color: #2F7484; background-color: #fff; border-color: #2F7484; cursor: not-allowed
+}

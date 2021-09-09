@@ -1,0 +1,151 @@
+//==
+//== Variables
+//== ======================================= ==//
+
+$basic-styles-screen-width: 1200px;
+
+$wt-family-base: Manrope, sans-serif;
+$wt-weight-base: 200;
+$wt-weight-bold: 700;
+
+
+//==
+//== Color palette
+//== ======================================= ==//
+
+$palette-base-color: #2F7484;
+$palette-disable-color: #EFEFEF;
+$palette-light-text: #C2C2C2;
+$palette-main-background-color: #E5E5E5;
+
+:export {
+    basecolor: $palette-base-color;
+    disablecolor: $palette-disable-color;
+    weight-bold: 700;
+}
+
+
+//==
+//== Default style for component
+//== ======================================= ==//
+
+* {
+    font-family: $wt-family-base;
+    font-weight: $wt-weight-base;
+}
+
+/* Remove outline on the forms and links */
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+[disabled] {
+    background-color: $palette-disable-color !important;
+}
+
+.disabled {
+    background-color: $palette-disable-color;
+    color: black;
+}
+
+.hide-scroll {
+    overflow: hidden !important;
+}
+
+.main-title {
+    width: 100%;
+    font-weight: 200;
+    font-size: 34px;
+    line-height: 46px;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    margin: 0 !important;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        margin: 0 0 20px 0 !important;
+    }
+}
+
+.seo-text-title {
+    padding-left: 0;
+}
+
+.page-form__wrapper {
+    background-color: #f7f7f7;
+
+    & .v-input__slot {
+        border-radius: 4px !important;
+        margin: 0 0 12px 0 !important;
+    }
+
+    & .v-text-field__details {
+    }
+}
+
+.main-input-label {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7E7E7E;
+    margin: 15px 0 0 0;
+}
+
+.main-input-field {
+    width: 100%;
+    height: 54px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.checkout-button {
+    border-radius: 50px;
+    max-width: 335px;
+    width: 100%;
+    height: 54px !important;
+    background-color: #2F7484 !important;
+    text-transform: none !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.default-text {
+    &__wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    &__title {
+        font-weight: 700;
+    }
+}
+
+.second-text {
+    color: #909090;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.point-cursor {
+    cursor: pointer;
+}
+.loader_opacity{
+    opacity: 0.5;
+}
+
+.input_label {
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 15px;
+}

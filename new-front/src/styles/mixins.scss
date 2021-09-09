@@ -1,0 +1,34 @@
+
+@mixin media($size) {
+  @media screen and (max-width: $size + px) {
+    @content
+  }
+}
+
+@mixin _320 { @include media(320) { @content } }
+@mixin _400 { @include media(400) { @content } }
+@mixin _480 { @include media(480) { @content } }
+@mixin _520 { @include media(520) { @content } }
+@mixin _600 { @include media(600) { @content } }
+@mixin _768 { @include media(768) { @content } }
+@mixin _900 { @include media(900) { @content } }
+@mixin _1024 { @include media(1024) { @content } }
+@mixin _1200 { @include media(1200) { @content } }
+@mixin _1280 { @include media(1280) { @content } }
+
+
+@mixin _safari { @supports (overflow:-webkit-marquee) and (justify-content:inherit) { @content } }
+
+
+$browser-context: 16;
+@function rem($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}

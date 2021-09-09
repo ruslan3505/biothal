@@ -1,0 +1,260 @@
+.btn-buy-item:hover {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.btn-buy-item {
+    width: 70%;
+    background-color: #2f7484;
+    border-color: #2f7484;
+}
+
+.btn-buy-item-mobile {
+    margin-top: 15px;
+    width: 70%;
+    background-color: #2f7484;
+    border-color: #2f7484;
+}
+
+.main-body-container {
+    background-color: #fefefe;
+}
+
+.card-item:hover {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 0 #ccc;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #212529;
+}
+
+#navbarMobile {
+    display: flex;
+}
+
+#navbarNavDropdownMobile {
+    border:none;
+    color: #212529;
+}
+
+#navbar {
+    display: none;
+}
+
+.card-title {
+    color: #000000;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 0px!important;
+}
+
+.card-image {
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+.price-div {
+    display: flex;
+}
+
+div.price-div-mobile {
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+div.price-info {
+    font-size: 24px
+}
+
+div.price-info-mobile {
+    width: 37%;
+    margin-left: 20px;
+    font-size: 21px;
+}
+
+.old-price {
+    margin: 5px 2px 3px 5px;
+}
+
+.card-options button {
+    color: #000000
+}
+
+.special-offer {
+    background-color: #EFEFEF;
+    height: content-box;
+    padding: 5px
+}
+
+.propose-mess {
+    width: 90% !important;
+    color: #000000;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.propose-mess-img {
+    text-align: right;
+    width: 5% !important;
+}
+
+.total-cart-count {
+    padding: 0 0 0 10px;
+}
+
+@media (min-width: 1200px) {
+    #navbar {
+        display: flex;
+    }
+
+    #navbarMobile {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    #exampleModalLong .modal-dialog{
+        margin-left: 0px !important;
+        height: 100%!important;
+    }
+
+    #exampleModalLong .modal-content{
+        /*height: 100%!important;*/
+    }
+
+    #exampleModalLong .pre-conteiner{
+        height: 100%!important;
+    }
+
+    .cart-div-buy {
+        display: block;
+    }
+    .cart-btn-buy {
+        margin-left: 10px;
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .price-info {
+        color: #2F7484;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .card-quantity {
+        display: none;
+    }
+
+    .card-options {
+        width: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-btn-buy {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    #navbar {
+        display: flex;
+    }
+
+    #navbarMobile {
+        display: none;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 1199px) {
+    #navbarMobile {
+        display: flex !important;
+    }
+
+    #icons {
+        width: 26%!important;
+    }
+
+    #logo-mobile {
+        width: 18em!important;
+        height: 4em!important;
+        max-width: 50% !important;
+        flex: none !important;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    #navbarMobile {
+        display: flex !important;
+    }
+
+    #icons {
+        width: 26%!important;
+    }
+
+    #logo-mobile {
+        width: 14em!important;
+        height: 4em!important;
+    }
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+@media screen and (max-width: 400px) {
+    div.dropdown-menu {
+        column-count: auto !important;
+    }
+
+    #navbarMobile {
+        display: block!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        vertical-align: top !important;
+
+    }
+    .restore_menu {
+        color: #000000;
+    }
+
+    .navbar-toggler, #logo-mobile, #icons {
+        display: inline !important;
+    }
+    #icons {
+        margin-right: 0!important;
+    }
+    #logo_img {
+        height: 1.5em !important;
+        width: 4.5em !important;
+        margin-left: 2.8em!important;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    #img_navbarMobile {
+        width: 1.1em;
+        margin-top: 5px;
+        border-style: none
+    }
+    .navbar-toggler {
+        border-style: none;
+    }
+
+    .modal-body, .fade, .show {
+        background: #FFFFFF;
+    }
+}
